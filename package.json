@@ -4,6 +4,9 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "lint": "eslint src",
     "check": "node --check src/index.js"
   },
   "dependencies": {
