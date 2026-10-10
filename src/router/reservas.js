@@ -1,5 +1,8 @@
 const express = require("express");
-const { prepararAreaReservas, validarReserva } = require("../middleware/reservas");
+const {
+  prepararAreaReservas,
+  validarReserva,
+} = require("../middleware/reservas");
 
 function crearRouterReservas(controlador) {
   const router = express.Router();

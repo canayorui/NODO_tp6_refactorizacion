@@ -6,7 +6,7 @@ function crearServicioReservas(datosIniciales) {
   }
 
   function buscarPorId(id) {
-    return reservas.find(r => r.id == id);
+    return reservas.find((reserva) => String(reserva.id) === String(id));
   }
 
   function contar() {
